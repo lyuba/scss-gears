@@ -1,2 +1,5 @@
-Useful mixins to be used together with the awesome SCSS (http://sass-lang.com/) and Compass Susy Plugin (http://susy.oddbird.net/)
+Useful mixins to be used together with the awesome
+- SCSS (http://sass-lang.com/)
+- Compass (http://compass-style.org/)
+- Compass Susy Plugin (http://susy.oddbird.net/)
 Licence: MIT
