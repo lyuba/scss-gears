@@ -1,0 +1,8 @@
+// Choose either margin or padding to do the job
+@mixin full($nested: false, $property: margin) {
+  clear: both;
+  @if not $nested {
+    #{$property}-right: side-gutter();
+    #{$property}-left: side-gutter();
+  }
+}

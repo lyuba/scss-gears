@@ -1,0 +1,32 @@
+@mixin inline-block-list-item($gutters: false, $method: padding, $direction: false) {
+  @include no-bullet;
+  @include inline-block;
+  //white-space: nowrap;
+  letter-spacing: 0px;
+  font-size: $base-font-size;
+  @if $gutters {
+    @if $direction {
+      //&:first-child, &.first {
+        #{$method}-#{$direction}: $gutters; 
+      //}
+      //&:last-child, &.last {
+       // #{$method}-#{opposite-position($direction)}: 0px;
+      //}
+    } @else {
+      #{$method}: {
+        left: $gutters;
+        right: $gutters;
+      }
+    }
+  }
+}
+
+@mixin inline-block-list($gutters: false, $method: padding, $direction: false) {
+  @include inline-block-list-container;
+  letter-spacing: -1px;
+  font-size: 0;
+  //white-space: normal;
+  li {
+    @include inline-block-list-item($gutters, $method, $direction);
+  } 
+}

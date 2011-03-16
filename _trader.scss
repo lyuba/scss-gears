@@ -1,0 +1,11 @@
+// Leader and trailer at the same time
+//I really cannot call it in any other way
+@mixin trader($lines: 1, $font-size: $base-font-size, $property: margin) {
+  @include leader($lines, $font-size, $property);
+  @include trailer($lines, $font-size, $property);
+}
+
+@mixin padding-trader($lines: 1, $font-size: $base-font-size) {
+  @include padding-leader($lines, $font-size, $property);
+  @include padding-trailer($lines, $font-size, $property);
+}

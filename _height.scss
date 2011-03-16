@@ -1,0 +1,3 @@
+@mixin height($lines: 1) {
+  height: $lines*$base-line-height;
+}

@@ -1,15 +1,4 @@
-//* Overrided Susy classes *//
-
-// Choose either margin or padding to do the job
-@mixin full($nested: false, $property: margin) {
-  clear: both;
-  @if not $nested {
-    #{$property}-right: side-gutter();
-    #{$property}-left: side-gutter();
-  }
-}
-
-// Set the direction of float, and more interestingly, - neglect it
+// Set the direction of float or neglect it
 // Set the side of the distance applied to the block
 // Set the property to implement the distance
 @mixin columns($n, $context: false, $float: left, $side: right, $property: margin) {
